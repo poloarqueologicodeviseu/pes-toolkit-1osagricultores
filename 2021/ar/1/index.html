@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Primeiros Agricultores | PES | Polo Arqueológico de Viseu</title>
+  <meta name="description" content="Primeiros Agricultores">
+  <meta name="author" content="Polo Arqueológico de Viseu">
+
+    <script src="assets/aframe.min.js"></script>
+    <script src="assets/aframe-ar.js"></script>
+    <script src="assets/gesture-detector.js"></script>
+    <script src="assets/gesture-handler.js"></script>
+</head>
+
+
+    <body style="margin : 0px; overflow: hidden;">
+
+	<a-scene embedded arjs=’sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;’ 
+	embedded
+	renderer="logarithmicDepthBuffer: true;"
+	vr-mode-ui="enabled: false"
+	gesture-detector
+	id="scene"
+	>
+
+      <a-assets>
+        <a-asset-item id="placa" src="gltf/placa-sketchfab/scene.gltf"></a-asset-item>
+      </a-assets>
+
+
+      <a-marker
+        preset="hiro"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+      >
+        <a-entity
+          id="placa-model"
+          gltf-model="#placa"
+          position="0 0 0"
+          rotation="0 0 0"
+          scale="10 10 10"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+
+        </a-scene>
+
+    </body>
+</html>
+
+
+
