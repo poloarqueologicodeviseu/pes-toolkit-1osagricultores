@@ -26,7 +26,8 @@
 	>
 		
       <a-assets>
-        <a-asset-item id="placa" src="../gltf/vaso_pequeno/gltf.gltf" shadow></a-asset-item>
+        <a-asset-item id="vaso" src="../gltf/vaso_pequeno/gltf.gltf" shadow></a-asset-item>
+        <a-asset-item id="placa" src="../gltf/placa-idolo/final_fixed.gltf" shadow></a-asset-item>	      
       </a-assets>
 
 		
@@ -40,8 +41,8 @@
 	smooth="true"
       >
         <a-entity
-          id="placa-model"
-          gltf-model="#placa"
+          id="vaso-model"
+          gltf-model="#vaso"
           position="0 0 0"
           rotation="0 0 0"
           scale="5 5 5"
@@ -58,7 +59,7 @@
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
-        id="markerA"
+        id="markerB"
 	smooth="true"
       >
         <a-entity
