@@ -1,0 +1,144 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "placa-idolo"
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "placa_material",
+            "normalTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.8100000023841858
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh[vertices] (level 8).003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "placa_normal_fixed",
+            "uri" : "placa_normal_fixed.png"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "placa_cor_fixed",
+            "uri" : "placa_cor_fixed.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 100738,
+            "max" : [
+                0.027280936017632484,
+                0.03468482568860054,
+                0.007230386603623629
+            ],
+            "min" : [
+                -0.026879774406552315,
+                -0.0322822742164135,
+                -0.006081936415284872
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 100738,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 100738,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 596262,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 1208856,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1208856,
+            "byteOffset" : 1208856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 805904,
+            "byteOffset" : 2417712
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2385048,
+            "byteOffset" : 3223616
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 5608664,
+            "uri" : "final_fixed.bin"
+        }
+    ]
+}
