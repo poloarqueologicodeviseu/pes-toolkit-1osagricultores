@@ -17,7 +17,7 @@
 <body style="margin : 0px; overflow: hidden;">
 
   <a-scene embedded
-  arjs="trackingMethod: best; selectCamera: true; debugUIEnabled: false;  detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+  arjs="trackingMethod: best; selectCamera: true; debugUIEnabled: false;  detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
   renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: false; sortObjects: true; physicallyCorrectLights: false;"
   vr-mode-ui="enabled: false"
   gesture-detector id="scene"
@@ -37,8 +37,8 @@
         <a-entity
           id="placa-model"
           gltf-model="#placa"
-          position="0 0 0"
-          rotation="0 0 0"
+          position="0 1 0"
+          rotation="0 180 0"
           scale="50 50 50"
           class="clickable"
           gesture-handler
