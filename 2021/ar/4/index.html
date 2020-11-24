@@ -26,7 +26,7 @@
 <body style="margin : 0px; overflow: hidden;">
 <a-scene embedded
 arjs="trackingMethod: best; selectCamera: true; debugUIEnabled: false;  detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
-renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: false; sortObjects: true; physicallyCorrectLights: false;"
+renderer="logarithmicDepthBuffer: true; antialias: true; colorManagement: true; sortObjects: true; physicallyCorrectLights: false;"
 vr-mode-ui="enabled: false"
 gesture-detector id="scene"
 loading-screen="enabled: true;"
@@ -42,14 +42,16 @@ loading-screen="enabled: true;"
         <a-entity
           id="anta-model"
           gltf-model="#anta"
-          position="0 0 0"
+          position="0 0 -1"
           rotation="0 0 0"
-          scale="1 1 1"
+          scale="1.5 1.5 1.5"
           class="clickable"
           gesture-handler
         >
         </a-entity>
       </a-marker>
 
-<a-entity camera></a-entity>
+
+ <a-entity id='camera1' camera='near:0.1; far:50000; fov:80;' arjs-look-controls='smoothingFactor: 0.1'>
+
 </a-scene></body></html>
