@@ -31,7 +31,7 @@ vr-mode-ui="enabled: false"
 gesture-detector id="scene"
 loading-screen="enabled: true;"
 >
-<a-assets><a-asset-item id="anta" src="../gltf/anta/gltf.gltf" preload="auto"></a-asset-item></a-assets>
+<a-assets><a-asset-item id="anta" src="../gltf/anta/gltf.gltf"></a-asset-item></a-assets>
         <a-marker type="barcode" value="3"
         raycaster="objects: .clickable"
         emitevents="true"
@@ -44,7 +44,7 @@ loading-screen="enabled: true;"
           gltf-model="#anta"
           position="0 0 0"
           rotation="0 0 0"
-          scale="20 20 20"
+          scale="1 1 1"
           class="clickable"
           gesture-handler
         >
