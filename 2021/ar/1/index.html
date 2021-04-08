@@ -35,6 +35,19 @@
 
 <a-assets><a-asset-item id="placa" src="../gltf/placa-idolo/final_fixed_decimated.gltf" preload="auto"></a-asset-item></a-assets>
 
+          <a-marker type="pattern" url="pattern-qr-code.patt"  smooth="true">
+        <a-entity
+          id="placa-model"
+          gltf-model="#placa"
+          position="0 1 0"
+          rotation="0 180 0"
+          scale="50 50 50"
+          class="clickable"
+          gesture-handler
+        >     
+          </a-marker>  	  
+	  
+	  
         <a-marker type="barcode" value="1"
         raycaster="objects: .clickable"
         emitevents="true"
